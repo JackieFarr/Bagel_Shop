@@ -69,11 +69,15 @@ h5 {
   font-size: 20px;
 }
 
-#bagel-list {
+/* #bagel-list {
   background-color: #00A7E1;
   color: white;
   position: relative;
-  border: 5px solid white;
+  border: 5px solid white; */
+}
+
+#bagel-list th {
+  background-color: black;
 }
 
 #form-wrapper {

@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // var fillings = ["Honey Roast Ham", "Pastrami", "Smoked Turkey", "Roast Beef", "Smoked Salmon", "Pulled Pork"]
 
 const createBagelListItem = function (form) {
-  const bagelListItem = document.createElement("th");
+  const bagelListItem = document.createElement("table");
   bagelListItem.classList.add("bagel-list-item")
 
   const fillingOne = document.createElement("td");
