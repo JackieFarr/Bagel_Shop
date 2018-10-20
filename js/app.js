@@ -18,23 +18,25 @@ document.addEventListener('DOMContentLoaded', () => {
     event.target.reset();
   };
 
+// var fillings = ["Honey Roast Ham", "Pastrami", "Smoked Turkey", "Roast Beef", "Smoked Salmon", "Pulled Pork"]
+
 const createBagelListItem = function (form) {
-  const bagelListItem = document.createElement("h1");
+  const bagelListItem = document.createElement("th");
   bagelListItem.classList.add("bagel-list-item")
 
-  const fillingOne = document.createElement("h3");
+  const fillingOne = document.createElement("td");
   fillingOne.textContent = form.fillingOne.value;
   bagelListItem.appendChild(fillingOne);
 
-  const fillingTwo = document.createElement("h3");
+  const fillingTwo = document.createElement("td");
   fillingTwo.textContent = form.fillingTwo.value;
   bagelListItem.appendChild(fillingTwo);
 
-  const bagel = document.createElement("h2");
+  const bagel = document.createElement("td");
   bagel.textContent = form.bagel.value;
   bagelListItem.appendChild(bagel);
 
-  const finish = document.createElement("h2");
+  const finish = document.createElement("td");
   finish.textContent = form.finish.value;
   bagelListItem.appendChild(finish);
 
@@ -44,7 +46,6 @@ const createBagelListItem = function (form) {
   // bagelListItem.appendChild(selectFinish);
 
   return bagelListItem;
-
 }
 
 const handleDeleteAllClick = function (event) {

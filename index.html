@@ -9,77 +9,82 @@
 
   <body>
     <h1>Bagel Meats Cheese</h1>
-    <p id="welcome-paragraph">Welcome to <strong>Bagel Meats Cheese!</strong></p>
-    
-    <p>Please choose two fillings from the options below to fill your bagel.</p>
 
+    <div class="square">
+      <p id="welcome-paragraph">Welcome to <span style="font-family: 'Pacifico', cursive;">Bagel Meats Cheese!</span></p>
+      <p><span style="font-size: 20px;">Please choose two fillings from the options below to create your bagel.</p>
+    </div>
+<br>
+  <div align="center">
     <table>
       <tr>
-   <th>Meat Fillings</th>
-   <th>Cheeses</th>
- </tr>
- <tr>
-   <td>Honey Roast Ham</td>
-   <td>Mozzarella</td>
- </tr>
- <tr>
-   <td>Pastrami</td>
-   <td>Halloumi</td>
- </tr>
- <tr>
-   <td>Smoked Turkey</td>
-   <td>Swiss</td>
- </tr>
- <tr>
-   <td>Roast Beef</td>
-   <td>Edam</td>
- </tr>
- <tr>
-   <td>Smoked Salmon</td>
-   <td>Goats</td>
- </tr>
- <tr>
-   <td>Pulled Pork  </td>
-   <td>Cream Cheese</td>
- </tr>
+         <th>Meat Fillings</th>
+         <th>Cheeses</th>
+      </tr>
+      <tr>
+        <td>Honey Roast Ham</td>
+        <td>Mozzarella</td>
+      </tr>
+      <tr>
+        <td>Pastrami</td>
+        <td>Halloumi</td>
+      </tr>
+      <tr>
+        <td>Smoked Turkey</td>
+        <td>Swiss Cheese</td>
+      </tr>
+      <tr>
+        <td>Roast Beef</td>
+        <td>Edam Cheese</td>
+      </tr>
+      <tr>
+        <td>Smoked Salmon</td>
+        <td>Goats Cheese</td>
+      </tr>
+      <tr>
+        <td>Pulled Pork  </td>
+        <td>Cream Cheese</td>
+      </tr>
     </table>
+  </div>
 <br>
 <br>
-    <form id="new-item-form">
-<div id="form-wrapper">
-
-      <div class="form-item">
-        <label for="fillingOne" class="primary">Pick a meat filling:</label>
-        <input type="text" id="fillingOne" required>
+  <form id="new-item-form">
+    <div id="form-wrapper">
+      <div class="menu">
+        <div class="form-item">
+          <label for="fillingOne" class="primary">Pick a meat filling:</label>
+          <input type="text" id="fillingOne" name="Filling" placeholder="Filling" required>
         </div>
-    <br>
-    <br>
-    <div class="form-item">
-      <label for="fillingTwo" class="primary">Pick a cheese filling:</label>
-      <input type="text" id="fillingTwo" required>
-    </div>
+<br>
+<br>
+        <div class="form-item">
+          <label for="fillingTwo" class="primary">Pick a cheese filling:</label>
+          <input type="text" id="fillingTwo" name="Cheese" placeholder="Cheese" required>
+        </div>
 
 <br>
-      <div class="form-item">
-        <label for="bagel">Choose your bagel:</label>
-        <select id="bagel" required>
-          <option value="Please select your bagel" disabled selected>Please select your bagel</option>
-          <option value="Wholemeal Bagel">Wholemeal Bagel</option>
-          <option value="Poppyseed Bagel">Poppy Seed Bagel</option>
-          <option value="Onion Bagel">Onion Bagel</option>
-          <option value="Cinnamon Raisin Bagel">Cinnamon Raisin Bagel</option>
-          <option value="Wholemeal Bagel">Wholemeal Bagel</option>
-        </select>
-      </div>
+        <div class="form-item">
+          <label for="bagel">Choose your bagel:</label>
+            <select id="bagel" required>
+              <option value="Please select your bagel" disabled selected>Please select your bagel</option>
+              <option value="Wholemeal Bagel">Wholemeal Bagel</option>
+              <option value="Poppyseed Bagel">Poppy Seed Bagel</option>
+              <option value="Onion Bagel">Onion Bagel</option>
+              <option value="Cinnamon Raisin Bagel">Cinnamon Raisin Bagel</option>
+              <option value="Wholemeal Bagel">Wholemeal Bagel</option>
+            </select>
+        </div>
 <br>
       <div class="form-item">
         <label for="finish">Select your finish:</label>
-        <select id="finish" required>
-          <option value="Please select your finish" disabled selected>Please select your finish</option>
-          <option value="Toasted">Toasted</option>
-          <option value="Not-toasted">Not toasted</option>
-        </select>
+          <select id="finish" required>
+            <option value="Please select your finish" disabled selected>Please select your finish</option>
+            <option value="Toasted">Toasted</option>
+            <option value="Not-toasted">Not toasted</option>
+          </select>
       </div>
+</div>
 
       <!-- RADIO BUTTONS -->
       <!-- <div class="form-item">
@@ -87,14 +92,15 @@
         <input type="radio" name="toasted" value="Toasted">Toasted
         <input type="radio" name="toasted" value="Not-toasted">Not-toasted<br>
       </div> -->
-</div>
+    </div>
         <input type="submit" value="Submit Bagel"/>
 <br>
-      </form>
+  </form>
 
-        <button id="delete-all">Delete All</button>
+    <button id="delete-all">Delete All</button>
 <br>
     <h1>Bagel Orders</h1>
-    <div id="bagel-list"></div>
+      <div id="bagel-list"></div>
+      <br>
   </body>
 </html>
