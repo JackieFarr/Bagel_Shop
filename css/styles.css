@@ -35,7 +35,7 @@ h1 {
 }
 
 .menu {
-  background-color: #00A7E1;
+  background-color: coral;
   color: white;
   opacity: 0.9;
   height: auto;
@@ -44,6 +44,7 @@ h1 {
   position: relative;
   padding: 10px;
   left: 360px;
+  font-size: 18px;
 }
 
 p {
@@ -56,13 +57,13 @@ p {
   padding: 12px 20px; */
 /* } */
 
-h2 {
-  color: green;
+h3 {
+  font-family: 'Pacifico', cursive;
+  color: white;
+  text-shadow: 5px 5px 5px black;
+  font-size: 50px;
 }
 
-h3{
-  color: purple;
-}
 
 h5 {
   font-family: sans-serif;
@@ -70,7 +71,7 @@ h5 {
 }
 
 /* #bagel-list {
-  background-color: #00A7E1;
+  background-color: coral;
   color: white;
   position: relative;
   border: 5px solid white; */
@@ -84,6 +85,38 @@ h5 {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+#fillingOne {
+  border: 1px solid #ccc;
+  padding: 10px 10px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+#fillingTwo {
+  border: 1px solid #ccc;
+  padding: 10px 10px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+#bagel {
+  border: 1px solid #ccc;
+  padding: 10px 10px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+#finish {
+  border: 1px solid #ccc;
+  padding: 10px 10px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    font-size: 15px;
 }
 
 button, input[type="submit"] {
@@ -101,13 +134,13 @@ button, input:hover {
 }
 
 button:hover {
-  background-color: #007EA7;
+  background-color: coral;
   color: white;
 }
 
 /* .dropbtn {
-  background-color: #4CAF50;
-      color: white;
+  background-color: 4CAF50;
+      color: ;
       padding: 16px;
       font-size: 16px;
       border: none;
