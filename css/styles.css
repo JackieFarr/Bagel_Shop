@@ -47,6 +47,56 @@ h1 {
   font-size: 18px;
 }
 
+.menu select {
+
+  background-color: white;
+  color: #D3D3D3;
+  border: thin solid #003459;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 2em;
+  width: 200px;
+
+ /* reset */
+
+ margin: 0;
+
+    background-image:
+      linear-gradient(45deg, transparent, #003459 50%),
+      linear-gradient(135deg, #003459, transparent 50%),
+      linear-gradient(to right, #003459, #003459);
+    background-position:
+      calc(100% - 20px) calc(1em + 2px),
+      calc(100% - 15px) calc(1em + 2px),
+      100% 0;
+    background-size:
+      2px 2px,
+      2px 2px,
+      1.5em 1.5em;
+    background-repeat: no-repeat;
+  }
+
+  /* .menu select:focus {
+    background-image:
+      linear-gradient(45deg, white 50%, transparent 50%),
+      linear-gradient(135deg, transparent 50%, white 50%),
+      linear-gradient(to right, #007EA7, #007EA7);
+    background-position:
+      calc(100% - 15px) 1em,
+      calc(100% - 20px) 1em,
+      100% 0;
+    background-size:
+      5px 5px,
+      5px 5px,
+      2.5em 2.5em;
+    background-repeat: no-repeat;
+    border-color: white;
+    outline: 0;
+  } */
+}
+
+
 p {
   color: white;
 }
@@ -85,6 +135,14 @@ h5 {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+#name {
+  border: 1px solid #ccc;
+  padding: 10px 10px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    font-size: 15px;
 }
 
 #fillingOne {

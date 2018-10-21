@@ -65,22 +65,67 @@
     <div id="form-wrapper">
       <h3>Order your bagel!</h3>
 
+
+
       <div class="menu">
+
         <div class="form-item">
-          <label for="fillingOne" class="primary">Pick a meat filling:</label>
-          <input type="text" id="fillingOne" name="Filling" placeholder="Filling..." required>
+          <label for="name">Enter your name:</label>
+          <input type="text" id="name" name="Name" placeholder="Name..." required>
         </div>
 <br>
         <div class="form-item">
+          <label for="fillingOne" class="primary">Pick a meat filling:</label>
+          <select id="fillingOne" required>
+            <option value="Mmm meat..." disabled selected>Mmm meat...</option>
+            <option value="Honey Roast Ham">Honey Roast Ham</option>
+            <option value="Pastrami">Pastrami</option>
+            <option value="Smoked Turkey">Smokey Turkey</option>
+            <option value="Roast Beed">Roast Beed</option>
+            <option value="Smoked Salmon">Smoked Salmon</option>
+            <option value="Pulled Pork">Pulled Pork</option>
+            <option value="Tuna Mayo">Tuna Mayo</option>
+            <option value="Salami">Salami</option>
+            <option value="Home-made Beef Chilli">Home-made Beef Chilli</option>
+          </select>
+        </div>
+<br>
+<!-- TEXT INPUT FOR FILLING ONE  -->
+        <!-- <div class="form-item">
+          <label for="fillingOne" class="primary">Pick a meat filling:</label>
+          <input type="text" id="fillingOne" name="Filling" placeholder="Filling..." required>
+        </div>
+<br>-->
+
+<div class="form-item">
+  <label for="fillingTwo" class="primary">Choose your cheese:</label>
+  <select id="fillingTwo" required>
+    <option value="Mmm cheese..." disabled selected>Mmm cheese...</option>
+    <option value="Mozzarella">Mozzarella</option>
+    <option value="Halloumi">Halloumi</option>
+    <option value="Swiss">Swiss</option>
+    <option value="Edam">Edam</option>
+    <option value="Goats">Goats</option>
+    <option value="Cream Cheese">Cream cheese</option>
+    <option value="Red Leicester">Red Leicester</option>
+    <option value="Manchego">Manchego</option>
+    <option value="Camembert">Camembert</option>
+  </select>
+</div>
+
+
+<!-- TEXT INPUT FOR FILLING TWO  -->
+
+        <!-- <div class="form-item">
           <label for="fillingTwo" class="primary">Pick a cheese filling:</label>
           <input type="text" id="fillingTwo" name="Cheese" placeholder="Cheese..." required>
-        </div>
+        </div> -->
 
 <br>
         <div class="form-item">
           <label for="bagel">Choose your bagel:</label>
             <select id="bagel" required>
-              <option value="Please select your bagel" disabled selected>Please select your bagel</option>
+              <option value="Mmm bagels..." disabled selected>Mmm bagels...</option>
               <option value="Wholemeal Bagel">Wholemeal Bagel</option>
               <option value="Poppyseed Bagel">Poppy Seed Bagel</option>
               <option value="Onion Bagel">Onion Bagel</option>
@@ -92,7 +137,7 @@
       <div class="form-item">
         <label for="finish">Select your finish:</label>
           <select id="finish" required>
-            <option value="Please select your finish" disabled selected>Please select your finish</option>
+            <option value="To toast or not to toast..." disabled selected>To toast or not to toast...</option>
             <option value="Toasted">Toasted</option>
             <option value="Not-toasted">Not toasted</option>
           </select>
@@ -115,6 +160,7 @@
     <h1>Bagel Orders</h1>
       <br>
       <table align="center">
+        <th>Name</th>
         <th>Meat</th>
         <th>Cheese</th>
         <th>Bagel Type</th>

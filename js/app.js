@@ -24,6 +24,10 @@ const createBagelListItem = function (form) {
   const bagelListItem = document.createElement("table");
   bagelListItem.classList.add("bagel-list-item")
 
+  const name = document.createElement("td")
+  name.textContent = form.name.value;
+  bagelListItem.appendChild(name);
+
   const fillingOne = document.createElement("td");
   fillingOne.textContent = form.fillingOne.value;
   bagelListItem.appendChild(fillingOne);
